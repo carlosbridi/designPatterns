@@ -13,7 +13,6 @@ public class Main {
 		observable.add(observer2);
 		observable.add(observer3);
 		
-		
 		observable.setLockedMode(true);
 		
 		System.out.println("/***************Changed to false***************/");
