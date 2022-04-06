@@ -24,11 +24,11 @@ public class ProxyBookParser implements IBookParser {
     return getBookParser().getNumberOfSpaces();
   }
   
-  public BookParser getBookParser() {
+  private BookParser getBookParser() {
     if (bookParser == null) {
       bookParser = new BookParser(bookText);
       try {
-        Thread.sleep(20000);
+        Thread.sleep(20_000); //simulate expensive time to process some function/method.
       } catch (InterruptedException e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
